@@ -31,6 +31,8 @@ body {
   padding: 2vw 2vw 2vw 2vw;
   background-color: rgb(45, 65, 75);
   border-radius: 5px;
+  width: 95vw;
+  margin: 10px auto 0 auto;
 }
 
 form {
@@ -43,6 +45,7 @@ form {
   grid-auto-flow: column;
   grid-template-columns: min-content 1fr min-content min-content min-content;
   font-size: 1.5rem;
+  width: 95%;
 }
 
 .label {
