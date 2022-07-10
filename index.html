@@ -13,100 +13,108 @@
   <body>
     <div id="time-input-container">
       <form action="">
-        <div class="time-input-item" id="countdown-container">
+        <div class="labels">
           <p class="label">Countdown</p>
-          <input
-            class="time-input countdown-minutes"
-            type="number"
-            id=""
-            min="0"
-            max="999"
-            placeholder="0 min"
-          />
-          <p class="colon">:</p>
-          <input
-            class="time-input countdown-seconds"
-            type="number"
-            id=""
-            min="0"
-            max="59"
-            placeholder="0 sec"
-          />
-        </div>
-        <div class="time-input-item" id="sets-container">
           <p class="label">Sets</p>
-          <input
-            class="time-input"
-            type="number"
-            id="sets-input"
-            min="0"
-            max="999"
-            placeholder="0"
-          />
-        </div>
-        <div class="time-input-item" id="work-container">
           <p class="label">Work</p>
-          <input
-            class="time-input countdown-minutes"
-            type="number"
-            id=""
-            min="0"
-            max="999"
-            placeholder="0 min"
-          />
-          <p class="colon">:</p>
-          <input
-            class="time-input countdown-seconds"
-            type="number"
-            id=""
-            min="0"
-            max="59"
-            placeholder="0 sec"
-          />
-        </div>
-        <div class="time-input-item" id="rest-container">
           <p class="label">Rest</p>
-          <input
-            class="time-input countdown-minutes"
-            type="number"
-            id=""
-            min="0"
-            max="999"
-            placeholder="0 min"
-          />
-          <p class="colon">:</p>
-          <input
-            class="time-input countdown-seconds"
-            type="number"
-            id=""
-            min="0"
-            max="59"
-            placeholder="0 sec"
-          />
-        </div>
-        <div class="time-input-item" id="cooldown-container">
           <p class="label">Cooldown</p>
-          <input
-            class="time-input countdown-minutes"
-            type="number"
-            id=""
-            min="0"
-            max="999"
-            placeholder="0 min"
-          />
-          <p class="colon">:</p>
-          <input
-            class="time-input countdown-seconds"
-            type="number"
-            id=""
-            min="0"
-            max="59"
-            placeholder="0 sec"
-            pattern="[0-9]+"
-          />
         </div>
 
-        <input type="submit" value="BEGIN" id="start-timer" />
+        <div class="inputs">
+          <div class="input-section">
+            <input
+              class="time-input countdown-minutes"
+              type="number"
+              id=""
+              min="0"
+              max="999"
+              placeholder="0 min"
+            />
+            <p class="colon">:</p>
+            <input
+              class="time-input countdown-seconds"
+              type="number"
+              id=""
+              min="0"
+              max="59"
+              placeholder="0 sec"
+            />
+          </div>
+
+          <div class="input-section">
+            <input
+              class="time-input"
+              type="number"
+              id="sets-input"
+              min="0"
+              max="999"
+              placeholder="0"
+            />
+          </div>
+
+          <div class="input-section">
+            <input
+              class="time-input countdown-minutes"
+              type="number"
+              id=""
+              min="0"
+              max="999"
+              placeholder="0 min"
+            />
+            <p class="colon">:</p>
+            <input
+              class="time-input countdown-seconds"
+              type="number"
+              id=""
+              min="0"
+              max="59"
+              placeholder="0 sec"
+            />
+          </div>
+
+          <div class="input-section">
+            <input
+              class="time-input countdown-minutes"
+              type="number"
+              id=""
+              min="0"
+              max="999"
+              placeholder="0 min"
+            />
+            <p class="colon">:</p>
+            <input
+              class="time-input countdown-seconds"
+              type="number"
+              id=""
+              min="0"
+              max="59"
+              placeholder="0 sec"
+            />
+          </div>
+
+          <div class="input-section">
+            <input
+              class="time-input countdown-minutes"
+              type="number"
+              id=""
+              min="0"
+              max="999"
+              placeholder="0 min"
+            />
+            <p class="colon">:</p>
+            <input
+              class="time-input countdown-seconds"
+              type="number"
+              id=""
+              min="0"
+              max="59"
+              placeholder="0 sec"
+            />
+          </div>
+        </div>
+
+        <input id="begin" type="submit" value="BEGIN" id="start-timer" />
       </form>
     </div>
   </body>
