@@ -9,13 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <div id="time-input-container">
       <form action="">
         <div class="labels">
           <p class="label">Countdown</p>
-          <p class="label">Sets</p>
+          <p class="label">Reps</p>
           <p class="label">Work</p>
           <p class="label">Rest</p>
           <p class="label">Cooldown</p>
@@ -24,18 +25,18 @@
         <div class="inputs">
           <div class="input-section">
             <input
-              class="time-input countdown-minutes"
+              class="time-input"
               type="number"
-              id=""
+              id="countdown-minutes"
               min="0"
               max="999"
               placeholder="0 min"
             />
             <p class="colon">:</p>
             <input
-              class="time-input countdown-seconds"
+              class="time-input"
               type="number"
-              id=""
+              id="countdown-seconds"
               min="0"
               max="59"
               placeholder="0 sec"
@@ -46,7 +47,7 @@
             <input
               class="time-input"
               type="number"
-              id="sets-input"
+              id="reps-input"
               min="0"
               max="999"
               placeholder="0"
@@ -55,18 +56,18 @@
 
           <div class="input-section">
             <input
-              class="time-input countdown-minutes"
+              class="time-input"
               type="number"
-              id=""
+              id="work-minutes"
               min="0"
               max="999"
               placeholder="0 min"
             />
             <p class="colon">:</p>
             <input
-              class="time-input countdown-seconds"
+              class="time-input"
               type="number"
-              id=""
+              id="work-seconds"
               min="0"
               max="59"
               placeholder="0 sec"
@@ -75,18 +76,18 @@
 
           <div class="input-section">
             <input
-              class="time-input countdown-minutes"
+              class="time-input"
               type="number"
-              id=""
+              id="rest-minutes"
               min="0"
               max="999"
               placeholder="0 min"
             />
             <p class="colon">:</p>
             <input
-              class="time-input countdown-seconds"
+              class="time-input"
               type="number"
-              id=""
+              id="rest-seconds"
               min="0"
               max="59"
               placeholder="0 sec"
@@ -95,18 +96,18 @@
 
           <div class="input-section">
             <input
-              class="time-input countdown-minutes"
+              class="time-input"
               type="number"
-              id=""
+              id="cooldown-minutes"
               min="0"
               max="999"
               placeholder="0 min"
             />
             <p class="colon">:</p>
             <input
-              class="time-input countdown-seconds"
+              class="time-input"
               type="number"
-              id=""
+              id="cooldown-seconds"
               min="0"
               max="59"
               placeholder="0 sec"
@@ -114,8 +115,21 @@
           </div>
         </div>
 
-        <input id="begin" type="submit" value="BEGIN" id="start-timer" />
+        <div id="start-button">START</div>
       </form>
     </div>
+
+    <div id="total-container">
+      Total Time
+      <div id="total-display">
+        <p id="total-hours">00</p>
+        <p id="total-colon">:</p>
+        <p id="total-minutes">00</p>
+        <p id="total-colon">:</p>
+        <p id="total-seconds">00</p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
