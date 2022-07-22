@@ -26,6 +26,7 @@ html {
 body {
   background-color: rgb(18, 25, 27);
   display: grid;
+  grid-auto-rows: min-content;
   place-items: center;
   height: 915px;
 }
@@ -74,10 +75,6 @@ form {
   grid-auto-rows: 70px;
 }
 
-#begin {
-  grid-area: begin;
-}
-
 .input-section {
   display: grid;
   grid-auto-flow: column;
@@ -99,7 +96,7 @@ form {
   line-height: 45px;
 }
 
-#begin {
+#start-button {
   width: 100%;
   height: 50px;
   border: none;
@@ -108,4 +105,22 @@ form {
   background-color: rgb(75, 95, 105);
   color: white;
   cursor: pointer;
+  display: grid;
+  place-items: center;
+  grid-area: begin;
+}
+
+#total-container {
+  display: grid;
+  align-self: start;
+  place-items: center;
+  color: white;
+  font-size: 3rem;
+  line-height: 45px;
+  margin-top: 20px;
+}
+
+#total-display {
+  display: grid;
+  grid-auto-flow: column;
 }
